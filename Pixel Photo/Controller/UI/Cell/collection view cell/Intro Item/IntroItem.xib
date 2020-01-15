@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IntroItem" id="rdL-6d-KCI" customClass="IntroItem" customModule="Pixel_Photo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="178"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Everything" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3b-Dm-che">
+                        <rect key="frame" x="76" y="52" width="162" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share images,videos, GIFs, and links with who you love and add your own hashtags." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9M-fe-K4D">
+                        <rect key="frame" x="20" y="92" width="274" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="X3b-Dm-che" firstAttribute="centerX" secondItem="9Ce-ap-tTo" secondAttribute="centerX" id="GMX-s5-Z1G"/>
+                <constraint firstItem="w9M-fe-K4D" firstAttribute="leading" secondItem="9Ce-ap-tTo" secondAttribute="leading" constant="20" id="M8R-mW-4Y6"/>
+                <constraint firstItem="X3b-Dm-che" firstAttribute="centerY" secondItem="9Ce-ap-tTo" secondAttribute="centerY" constant="-30" id="PCd-RG-iKZ"/>
+                <constraint firstItem="w9M-fe-K4D" firstAttribute="centerX" secondItem="X3b-Dm-che" secondAttribute="centerX" id="lGE-lF-2rp"/>
+                <constraint firstItem="w9M-fe-K4D" firstAttribute="top" secondItem="X3b-Dm-che" secondAttribute="bottom" constant="16" id="lkW-OW-7Gf"/>
+                <constraint firstItem="9Ce-ap-tTo" firstAttribute="trailing" secondItem="w9M-fe-K4D" secondAttribute="trailing" constant="20" id="zO5-yd-Lb3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Ce-ap-tTo"/>
+            <size key="customSize" width="314" height="178"/>
+            <connections>
+                <outlet property="descLbl" destination="w9M-fe-K4D" id="tCW-mw-Dv0"/>
+                <outlet property="titleLbl" destination="X3b-Dm-che" id="Oo7-oN-HQO"/>
+            </connections>
+            <point key="canvasLocation" x="-59" y="157"/>
+        </collectionViewCell>
+    </objects>
+</document>

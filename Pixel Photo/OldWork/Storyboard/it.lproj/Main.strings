@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "Register"; ObjectID = "0uy-ZN-ExB"; */
+"0uy-ZN-ExB.text" = "Register";
+
+/* Class = "UILabel"; text = " Please enter your email address.  We will send you a link to reset password."; ObjectID = "4b0-PK-erK"; */
+"4b0-PK-erK.text" = " Please enter your email address.  We will send you a link to reset password.";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "5VU-RF-FwO"; */
+"5VU-RF-FwO.placeholder" = "Username";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "6Fe-I7-HP1"; */
+"6Fe-I7-HP1.text" = "Sign In";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "75j-rR-k8X"; */
+"75j-rR-k8X.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "A2H-OA-7V3"; */
+"A2H-OA-7V3.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "TERMS AND SERVICES"; ObjectID = "DV8-Bd-VpK"; */
+"DV8-Bd-VpK.normalTitle" = "TERMS AND SERVICES";
+
+/* Class = "UILabel"; text = "DON'T HAVE AN ACCOUNT?"; ObjectID = "Foi-Px-J8p"; */
+"Foi-Px-J8p.text" = "DON'T HAVE AN ACCOUNT?";
+
+/* Class = "UILabel"; text = "CREATE AN ACCOUNT"; ObjectID = "KKC-3I-Uhh"; */
+"KKC-3I-Uhh.text" = "CREATE AN ACCOUNT";
+
+/* Class = "UIButton"; normalTitle = "Forgot your password?"; ObjectID = "Vog-dQ-5xM"; */
+"Vog-dQ-5xM.normalTitle" = "Forgot your password?";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "Xl3-Ao-RU0"; */
+"Xl3-Ao-RU0.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "BY REGISTERING YOU AGREE TO OUR "; ObjectID = "ax5-Lr-sWZ"; */
+"ax5-Lr-sWZ.text" = "BY REGISTERING YOU AGREE TO OUR ";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "b1v-Tk-Vkc"; */
+"b1v-Tk-Vkc.normalTitle" = "SIGN IN";
+
+/* Class = "UILabel"; text = "Welcome to PixelPhoto"; ObjectID = "bZe-Ct-mhu"; */
+"bZe-Ct-mhu.text" = "Welcome to PixelPhoto";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "f9w-eZ-JfW"; */
+"f9w-eZ-JfW.placeholder" = "Confirm Password";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "igr-iD-L6u"; */
+"igr-iD-L6u.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "koU-jJ-8y1"; */
+"koU-jJ-8y1.text" = "Sign In";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "p1V-g8-RtP"; */
+"p1V-g8-RtP.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "pbu-7H-HWI"; */
+"pbu-7H-HWI.text" = "OR";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "r1G-dK-UK3"; */
+"r1G-dK-UK3.normalTitle" = "Register";
+
+/* Class = "UILabel"; text = "SEND"; ObjectID = "w4n-Wu-oAO"; */
+"w4n-Wu-oAO.text" = "SEND";
+
+/* Class = "UILabel"; text = "ALREADY HAVE AN ACCOUNT?"; ObjectID = "yKe-ev-Md5"; */
+"yKe-ev-Md5.text" = "ALREADY HAVE AN ACCOUNT?";

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserSuggestionCollectionCell" id="247-mR-zSG" customClass="UserSuggestionCollectionCell" customModule="Pixel_Photo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="137" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="137" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsh-il-HuX">
+                        <rect key="frame" x="8" y="8" width="121" height="133"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Dpq-in-ONx">
+                                <rect key="frame" x="40.5" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qS3-zF-eyH"/>
+                                    <constraint firstAttribute="width" constant="40" id="zDO-OS-I2R"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James Adam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpa-6g-t9c">
+                                <rect key="frame" x="8" y="64" width="105" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUi-tK-stS">
+                                <rect key="frame" x="8" y="102" width="105" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Oyi-jZ-eIV"/>
+                                    <constraint firstAttribute="width" constant="105" id="gpL-hV-d49"/>
+                                </constraints>
+                                <state key="normal" title="Follow">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.01176470588" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="11.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="followPressed:" destination="247-mR-zSG" eventType="touchUpInside" id="mlm-a8-oBf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@aidil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgb-Ns-Jwb">
+                                <rect key="frame" x="8" y="80" width="105" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pgb-Ns-Jwb" firstAttribute="top" secondItem="gpa-6g-t9c" secondAttribute="bottom" id="DYj-zL-8Q8"/>
+                            <constraint firstItem="pgb-Ns-Jwb" firstAttribute="leading" secondItem="Vsh-il-HuX" secondAttribute="leading" constant="8" id="ISD-hQ-TkX"/>
+                            <constraint firstItem="Dpq-in-ONx" firstAttribute="top" secondItem="Vsh-il-HuX" secondAttribute="top" constant="8" id="MA9-pT-90Z"/>
+                            <constraint firstItem="WUi-tK-stS" firstAttribute="centerX" secondItem="pgb-Ns-Jwb" secondAttribute="centerX" id="StZ-PJ-YeQ"/>
+                            <constraint firstItem="WUi-tK-stS" firstAttribute="top" secondItem="pgb-Ns-Jwb" secondAttribute="bottom" constant="8.5" id="cAz-Zm-oq6"/>
+                            <constraint firstItem="Dpq-in-ONx" firstAttribute="centerX" secondItem="Vsh-il-HuX" secondAttribute="centerX" id="d0Z-EX-vho"/>
+                            <constraint firstAttribute="trailing" secondItem="pgb-Ns-Jwb" secondAttribute="trailing" constant="8" id="eDP-Ok-rDm"/>
+                            <constraint firstItem="gpa-6g-t9c" firstAttribute="top" secondItem="Dpq-in-ONx" secondAttribute="bottom" constant="16" id="fk9-Id-5BQ"/>
+                            <constraint firstAttribute="trailing" secondItem="gpa-6g-t9c" secondAttribute="trailing" constant="8" id="jSA-67-uVZ"/>
+                            <constraint firstItem="gpa-6g-t9c" firstAttribute="leading" secondItem="Vsh-il-HuX" secondAttribute="leading" constant="8" id="wQ7-uz-YAR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Vsh-il-HuX" secondAttribute="trailing" constant="8" id="3IY-Ul-xiJ"/>
+                <constraint firstItem="Vsh-il-HuX" firstAttribute="leading" secondItem="247-mR-zSG" secondAttribute="leading" constant="8" id="Frp-Yj-MoA"/>
+                <constraint firstItem="Vsh-il-HuX" firstAttribute="top" secondItem="247-mR-zSG" secondAttribute="top" constant="8" id="fHr-Ck-Qd6"/>
+                <constraint firstAttribute="bottom" secondItem="Vsh-il-HuX" secondAttribute="bottom" constant="8" id="llm-zU-dTy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ENY-4h-zax"/>
+            <size key="customSize" width="137" height="149"/>
+            <connections>
+                <outlet property="containerView" destination="Vsh-il-HuX" id="3U9-Nf-cH6"/>
+                <outlet property="followBtn" destination="WUi-tK-stS" id="Xjy-UJ-G7t"/>
+                <outlet property="profileImgView" destination="Dpq-in-ONx" id="d1x-Dg-Qug"/>
+                <outlet property="profileNameLbl" destination="gpa-6g-t9c" id="czh-S4-R7I"/>
+                <outlet property="userNameLbl" destination="pgb-Ns-Jwb" id="dRO-ag-VR6"/>
+            </connections>
+            <point key="canvasLocation" x="202.40000000000001" y="187.55622188905548"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_profile_placeholder" width="112.5" height="112.5"/>
+    </resources>
+</document>

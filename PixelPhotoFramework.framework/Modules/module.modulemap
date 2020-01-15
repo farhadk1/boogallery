@@ -1,0 +1,6 @@
+framework module PixelPhotoFramework {
+  umbrella header "PixelPhotoFramework.h"
+
+  export *
+  module * { export * }
+}

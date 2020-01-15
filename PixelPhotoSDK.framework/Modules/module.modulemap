@@ -1,0 +1,11 @@
+framework module PixelPhotoSDK {
+  umbrella header "PixelPhotoSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module PixelPhotoSDK.Swift {
+    header "PixelPhotoSDK-Swift.h"
+    requires objc
+}

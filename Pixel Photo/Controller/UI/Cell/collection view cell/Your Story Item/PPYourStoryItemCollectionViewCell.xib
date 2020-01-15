@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PPYourStoryItemCollectionViewCellID" id="gTV-IL-0wX" customClass="PPYourStoryItemCollectionViewCell" customModule="Pixel_Photo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="146"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBM-qR-0WA">
+                        <rect key="frame" x="38" y="33" width="60" height="60"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1im-YD-qWy">
+                                <rect key="frame" x="3" y="3" width="54" height="54"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1im-YD-qWy" firstAttribute="width" secondItem="qBM-qR-0WA" secondAttribute="width" multiplier="0.9" id="V0h-zI-Dg2"/>
+                            <constraint firstItem="1im-YD-qWy" firstAttribute="centerX" secondItem="qBM-qR-0WA" secondAttribute="centerX" id="dez-2j-alS"/>
+                            <constraint firstAttribute="width" constant="60" id="l9C-9p-LYy"/>
+                            <constraint firstItem="1im-YD-qWy" firstAttribute="height" secondItem="qBM-qR-0WA" secondAttribute="height" multiplier="0.9" id="qf0-XB-HF3"/>
+                            <constraint firstItem="1im-YD-qWy" firstAttribute="centerY" secondItem="qBM-qR-0WA" secondAttribute="centerY" id="yef-eO-XfO"/>
+                            <constraint firstAttribute="height" constant="60" id="ykO-Tl-Xh5"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHo-3N-jXi">
+                        <rect key="frame" x="42.5" y="105" width="51" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1HL-UL-wOw">
+                        <rect key="frame" x="78" y="73" width="20" height="20"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_plus_white" translatesAutoresizingMaskIntoConstraints="NO" id="5Vt-EC-XJZ">
+                                <rect key="frame" x="5" y="5" width="10" height="10"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54117647059999996" green="0.1137254902" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="CgA-N2-gNs"/>
+                            <constraint firstItem="5Vt-EC-XJZ" firstAttribute="height" secondItem="1HL-UL-wOw" secondAttribute="height" multiplier="0.5" id="Swf-fy-8aN"/>
+                            <constraint firstItem="5Vt-EC-XJZ" firstAttribute="centerY" secondItem="1HL-UL-wOw" secondAttribute="centerY" id="YtS-w9-OFr"/>
+                            <constraint firstItem="5Vt-EC-XJZ" firstAttribute="centerX" secondItem="1HL-UL-wOw" secondAttribute="centerX" id="aAj-Qg-yRp"/>
+                            <constraint firstAttribute="width" constant="20" id="f2x-RH-CMw"/>
+                            <constraint firstItem="5Vt-EC-XJZ" firstAttribute="width" secondItem="1HL-UL-wOw" secondAttribute="width" multiplier="0.5" id="hdO-Gw-1N9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="qBM-qR-0WA" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-10" id="E1B-Qh-l5y"/>
+                <constraint firstItem="1HL-UL-wOw" firstAttribute="trailing" secondItem="qBM-qR-0WA" secondAttribute="trailing" id="GMx-AD-irJ"/>
+                <constraint firstItem="yHo-3N-jXi" firstAttribute="top" secondItem="qBM-qR-0WA" secondAttribute="bottom" constant="12" id="P41-XS-1hz"/>
+                <constraint firstItem="yHo-3N-jXi" firstAttribute="centerX" secondItem="qBM-qR-0WA" secondAttribute="centerX" id="cMo-95-sxR"/>
+                <constraint firstItem="qBM-qR-0WA" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="deY-0N-Pde"/>
+                <constraint firstItem="1HL-UL-wOw" firstAttribute="bottom" secondItem="qBM-qR-0WA" secondAttribute="bottom" id="mlK-Eg-VNT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="136" height="146"/>
+            <connections>
+                <outlet property="addStoryView" destination="1HL-UL-wOw" id="8Df-Gx-T8g"/>
+                <outlet property="profImgContainerView" destination="qBM-qR-0WA" id="9ev-CN-Dkl"/>
+                <outlet property="profileImageVIew" destination="1im-YD-qWy" id="Jfu-sd-72N"/>
+                <outlet property="yourStoryLbl" destination="yHo-3N-jXi" id="Zje-q7-cwe"/>
+            </connections>
+            <point key="canvasLocation" x="-28.800000000000001" y="89.955022488755631"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_plus_white" width="24" height="24"/>
+    </resources>
+</document>

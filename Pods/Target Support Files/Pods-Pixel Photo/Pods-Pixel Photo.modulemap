@@ -1,0 +1,6 @@
+framework module Pods_Pixel_Photo {
+  umbrella header "Pods-Pixel Photo-umbrella.h"
+
+  export *
+  module * { export * }
+}

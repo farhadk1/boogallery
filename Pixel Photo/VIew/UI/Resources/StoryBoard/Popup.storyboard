@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Security PopupVC-->
+        <scene sceneID="Pxo-Fc-XZS">
+            <objects>
+                <viewController storyboardIdentifier="SecurityPopupVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="apr-Ns-eTe" customClass="SecurityPopupVC" customModule="Pixel_Photo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8zo-fY-kOg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3r-kd-KGm">
+                                <rect key="frame" x="20.5" y="353" width="373" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hca-lU-GbQ">
+                                        <rect key="frame" x="24" y="24" width="69.5" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MlZ-qz-lvW">
+                                        <rect key="frame" x="327" y="154" width="30" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reb-k2-Ten">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="OK">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="okPressed:" destination="apr-Ns-eTe" eventType="touchUpInside" id="iUO-Nr-oo8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Amu-TT-UtE">
+                                        <rect key="frame" x="24" y="70.5" width="341" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.26663362979999999" green="0.26668566469999999" blue="0.26663035149999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Amu-TT-UtE" firstAttribute="top" secondItem="hca-lU-GbQ" secondAttribute="bottom" constant="24" id="2Gv-Ic-Pq2"/>
+                                    <constraint firstItem="hca-lU-GbQ" firstAttribute="leading" secondItem="W3r-kd-KGm" secondAttribute="leading" constant="24" id="BVe-Du-uZh"/>
+                                    <constraint firstAttribute="trailing" secondItem="MlZ-qz-lvW" secondAttribute="trailing" constant="16" id="Cpg-NC-Pao"/>
+                                    <constraint firstAttribute="bottom" secondItem="MlZ-qz-lvW" secondAttribute="bottom" constant="16" id="W7N-R9-9Wq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Amu-TT-UtE" secondAttribute="trailing" constant="8" id="aP0-n9-9gf"/>
+                                    <constraint firstAttribute="height" constant="200" id="bJa-RT-wmD"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hca-lU-GbQ" secondAttribute="trailing" constant="20" symbolic="YES" id="c4T-eY-NXo"/>
+                                    <constraint firstItem="Amu-TT-UtE" firstAttribute="leading" secondItem="W3r-kd-KGm" secondAttribute="leading" constant="24" id="oNt-Em-x0j"/>
+                                    <constraint firstItem="hca-lU-GbQ" firstAttribute="top" secondItem="W3r-kd-KGm" secondAttribute="top" constant="24" id="uQG-II-EE5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.58359925180000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W3r-kd-KGm" firstAttribute="width" secondItem="8zo-fY-kOg" secondAttribute="width" multiplier="0.9" id="Dpt-fa-cFL"/>
+                            <constraint firstItem="W3r-kd-KGm" firstAttribute="centerY" secondItem="oTu-8x-0zs" secondAttribute="centerY" id="fg7-ed-HD2"/>
+                            <constraint firstItem="W3r-kd-KGm" firstAttribute="centerX" secondItem="oTu-8x-0zs" secondAttribute="centerX" id="nQF-YN-xxe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oTu-8x-0zs"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorTextLabel" destination="Amu-TT-UtE" id="sTf-SD-j89"/>
+                        <outlet property="titleLabel" destination="hca-lU-GbQ" id="eyl-2i-Vab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bi7-pc-VRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="583" y="-682"/>
+        </scene>
+    </scenes>
+</document>

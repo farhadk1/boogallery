@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PPPostItemCollectionViewCellID" id="gTV-IL-0wX" customClass="PPPostItemCollectionViewCell" customModule="Pixel_Photo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="136"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_item_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="r1q-hH-s8z">
+                        <rect key="frame" x="7.5" y="7" width="130.5" height="122"/>
+                    </imageView>
+                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdU-DX-jGw">
+                        <rect key="frame" x="7.5" y="7" width="130.5" height="122"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUR-eY-hdX">
+                        <rect key="frame" x="95" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="IyH-kM-tdL"/>
+                            <constraint firstAttribute="width" constant="50" id="X0U-IB-sGL"/>
+                        </constraints>
+                        <state key="normal" image="ic_remove_item"/>
+                        <connections>
+                            <action selector="crossPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="EBP-Td-b4n"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="r1q-hH-s8z" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="B3W-fA-YH2"/>
+                <constraint firstItem="r1q-hH-s8z" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="GEI-1z-F2g"/>
+                <constraint firstItem="r1q-hH-s8z" firstAttribute="width" secondItem="ZTg-uK-7eu" secondAttribute="width" multiplier="0.9" id="MhV-sn-Ye7"/>
+                <constraint firstItem="gdU-DX-jGw" firstAttribute="width" secondItem="r1q-hH-s8z" secondAttribute="width" id="P6r-gX-MkX"/>
+                <constraint firstItem="UUR-eY-hdX" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="jB5-7k-GXQ"/>
+                <constraint firstItem="gdU-DX-jGw" firstAttribute="height" secondItem="r1q-hH-s8z" secondAttribute="height" id="jOB-4e-kJZ"/>
+                <constraint firstItem="gdU-DX-jGw" firstAttribute="centerX" secondItem="r1q-hH-s8z" secondAttribute="centerX" id="nud-9P-mcw"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="UUR-eY-hdX" secondAttribute="trailing" id="wWl-9R-VMh"/>
+                <constraint firstItem="gdU-DX-jGw" firstAttribute="centerY" secondItem="r1q-hH-s8z" secondAttribute="centerY" id="wtZ-NZ-BYF"/>
+                <constraint firstItem="r1q-hH-s8z" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.9" id="zRS-RS-okN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="145" height="136"/>
+            <connections>
+                <outlet property="itemImageView" destination="r1q-hH-s8z" id="u3M-gI-AhH"/>
+                <outlet property="itemWebView" destination="gdU-DX-jGw" id="YtI-Ks-rrt"/>
+                <outlet property="removeBtn" destination="UUR-eY-hdX" id="dH2-sj-Kzd"/>
+            </connections>
+            <point key="canvasLocation" x="-2.3999999999999999" y="179.91004497751126"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_remove_item" width="32" height="32"/>
+        <image name="img_item_placeholder" width="400" height="300"/>
+    </resources>
+</document>
